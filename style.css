@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(147, 147, 241);
+}
+
+#app {
+    text-align: center;
+    margin: 1em;
+}
+
+#app2 {
+    text-align: center;
+}
