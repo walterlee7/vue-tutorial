@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#app',
     data: {
+        title: "Declarative Rendering: ",
         message: 'Hello Vue!'
     }
 })
