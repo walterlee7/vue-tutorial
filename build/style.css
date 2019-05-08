@@ -3,16 +3,37 @@ body {
 }
 
 #app {
+    background-color: orange;
     text-align: center;
     margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 #app2 {
+    background-color: orange;
     text-align: center;
     margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
 
 #app-2 {
+    background-color: rgb(134, 252, 134);
     text-align: center;
     margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
