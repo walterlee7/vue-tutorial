@@ -46,6 +46,10 @@ var app5 = new Vue({
 
         addItem: function () {
             app5.todos.push({ text: 'New item' })
+        },
+
+        refresh: function () {
+            window.location.reload();
         }
     }
 })
