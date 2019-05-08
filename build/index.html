@@ -42,6 +42,7 @@
     </div>
 
     <div id="app-4">
+        {{title}}
         <ol>
             <li v-for="todo in todos">
                 {{ todo.text }}
@@ -54,8 +55,15 @@
     </div>
 
     <div id="app-5">
+        {{title}}
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="app-6">
+        {{title}}
+        <p>{{ message }}</p>
+        <input v-model="message">
     </div>
 
     <!-- development version of Vue.js -->

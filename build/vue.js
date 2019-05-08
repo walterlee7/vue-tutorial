@@ -32,6 +32,7 @@ var app4 = new Vue({
 var app5 = new Vue({
     el: '#app-4',
     data: {
+        title: "Below text uses v-for to list string objects from an array.",
         todos: [
             { text: 'Learn JavaScript' },
             { text: 'Learn Vue' },
@@ -57,11 +58,20 @@ var app5 = new Vue({
 var app6 = new Vue({
     el: '#app-5',
     data: {
+        title: "Below examples uses v-on:click for event listening.",
         message: 'Hello Vue.js!'
     },
     methods: {
         reverseMessage: function () {
             this.message = this.message.split('').reverse().join('')
         }
+    }
+})
+
+var app7 = new Vue({
+    el: '#app-6',
+    data: {
+        title: "Below example uses v-model to handle input.",
+        message: 'Hello Vue!'
     }
 })
