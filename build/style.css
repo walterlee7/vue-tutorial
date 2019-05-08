@@ -61,3 +61,15 @@ body {
     margin-right: auto;
     width: 60%;
 }
+
+#app-5 {
+    background-color: rgb(252, 134, 144);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}

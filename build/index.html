@@ -47,6 +47,14 @@
                 {{ todo.text }}
             </li>
         </ol>
+
+        <button v-on:click="reverseText">Reverse Text</button>
+        <button v-on:click="addItem">Add New Item</button>
+    </div>
+
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
 
     <!-- development version of Vue.js -->
