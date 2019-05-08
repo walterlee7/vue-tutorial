@@ -34,6 +34,21 @@
         </span>
     </div>
 
+    <div id="app-3">
+        {{title}}
+        <br>
+        <br>
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <div id="app-4">
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+    </div>
+
     <!-- development version of Vue.js -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
