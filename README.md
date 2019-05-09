@@ -1,1 +1,1 @@
-This is a Vue.js tutorial.
+This is a Vue.js tutorial that displays the usage of different Vue directives.
