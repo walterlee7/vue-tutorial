@@ -1,5 +1,10 @@
+[v-cloak] {
+    display: none;
+}
+
 body {
     background-color: rgb(147, 147, 241);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #app {
@@ -14,7 +19,7 @@ body {
     width: 60%;
 }
 
-#app2 {
+#app-1 {
     background-color: orange;
     text-align: center;
     margin: 1em;
