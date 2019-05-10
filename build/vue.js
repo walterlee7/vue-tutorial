@@ -5,6 +5,14 @@ var title = new Vue({
     }
 })
 
+var table = new Vue({
+    el: '#table',
+    data: {
+        appBoxHtml: "<div id='app' v-cloak> <p>{{ title }}</p> <p>{{ message }}</p> </div>",
+        appBoxJs: "var app = new Vue({ el: '#app', data: { title: 'Declarative Rendering: ', message: 'Hello Vue!'} })"
+    }
+})
+
 var app = new Vue({
     el: '#app',
     data: {

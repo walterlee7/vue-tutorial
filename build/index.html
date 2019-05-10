@@ -19,6 +19,17 @@
         <p>{{ title }}</p>
     </div>
 
+    <table id="table" v-cloak>
+        <tr>
+            <td id="box">
+                {{ appBoxHtml }}
+            </td>
+            <td id="box">
+                {{ appBoxJs }}
+            </td>
+        </tr>
+    </table>
+
     <div id="app" v-cloak>
         <p>{{ title }}</p>
         <p>{{ message }}</p>
