@@ -1,3 +1,10 @@
+var title = new Vue({
+    el: '#title',
+    data: {
+        title: "Vue.js Directives"
+    }
+})
+
 var app = new Vue({
     el: '#app',
     data: {
