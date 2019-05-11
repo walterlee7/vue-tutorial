@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Walter Lee">
     <link rel="icon" type="image/png" sizes="16x16" href="img/walt-favicon.png">
@@ -23,23 +23,26 @@
         <tr>
             <td id="box">
                 <p id="center">HTML</p>
-                <pre>
+                <pre id="code">
                     <code>
-                        &lt;div id="app" v-cloak&gt;
-                            &lt;p&gt;{{ title }}&lt;/p&gt;
-                            &lt;p&gt;{{ message }}&lt;/p&gt;
-                        &lt;/div&gt;
+            &lt;div id="app" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;p&gt;{{ message }}&lt;/p&gt;
+            &lt;/div&gt;
                     </code>
                 </pre>
             </td>
             <td id="box">
                 <p id="center">JavaScript</p>
-                <pre>
+                <pre id="code">
                     <code>
-                         &lt;div id="app" v-cloak&gt;
-                            &lt;p&gt;{{ title }}&lt;/p&gt;
-                            &lt;p&gt;{{ message }}&lt;/p&gt;
-                        &lt;/div&gt;
+    var app = new Vue({
+        el: '#app',
+        data: {
+            title: "Declarative Rendering: ",
+            message: 'Hello Vue!'
+        }
+    })
                     </code>
                 </pre>
             </td>
