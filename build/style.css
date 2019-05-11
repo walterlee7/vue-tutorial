@@ -5,10 +5,12 @@
 body {
     background-color: rgb(147, 147, 241);
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    min-width: 811px;
 }
 
 #title {
-    background-color: rgb(235, 223, 201);
+    background-color: rgb(212, 212, 212);
+    border-radius: 15px;
     text-align: center;
     margin: 1em;
     padding: 0.5em;
@@ -16,7 +18,7 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
     font-weight: bold;
     font-size: 22px;
 }
@@ -32,7 +34,7 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 75%;
     font-size: 14px;
 }
 
