@@ -70,9 +70,67 @@
         <p>{{ message }}</p>
     </div>
 
-    <div id="app-1" v-cloak>
-        <p v-cloak>{{ message }}</p>
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">CSS</p>
+                <pre id="code">
+                        <code>
+                [v-cloak] {
+                    display: none;
+                }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-1">
+        <p v-cloak>{{ title }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <button v-on:click="refresh">Refresh</button>
     </div>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
 
     <div id="app-2" v-cloak>
         <p>{{ title }}</p>
@@ -83,11 +141,71 @@
         </span>
     </div>
 
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
+
     <div id="app-3" v-cloak>
         <p>{{ title }}</p>
         <br>
         <span v-if="seen">Now you see me</span>
     </div>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
 
     <div id="app-4" v-cloak>
         <p>{{ title }}</p>
@@ -102,17 +220,107 @@
         <button v-on:click="refresh">Refresh</button>
     </div>
 
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
+
     <div id="app-5" v-cloak>
         <p>{{ title }}</p>
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Reverse Message</button>
     </div>
 
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
+
     <div id="app-6" v-cloak>
         <p>{{ title }}</p>
         <p>{{ message }}</p>
         <input v-model="message">
     </div>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                        <code>
+                &lt;div id="app" v-cloak&gt;
+                    &lt;p&gt;{{ title }}&lt;/p&gt;
+                    &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;/div&gt;
+                        </code>
+                    </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                        <code>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: "Declarative Rendering: ",
+                message: 'Hello Vue!'
+            }
+        })
+                        </code>
+                    </pre>
+            </td>
+        </tr>
+    </table>
 
     <div id="app-7" v-cloak>
         <p>{{ title }}</p>

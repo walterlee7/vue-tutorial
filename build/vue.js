@@ -16,7 +16,14 @@ var app = new Vue({
 var app2 = new Vue({
     el: '#app-1',
     data: {
+        title: 'Below html element is missing v-cloak, v-cloak is used to stop {{ message }} from rendering before the message appears.',
         message: 'Hello World!'
+    },
+    methods: {
+
+        refresh: function () {
+            window.location.reload();
+        }
     }
 })
 
