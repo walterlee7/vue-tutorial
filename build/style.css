@@ -23,6 +23,21 @@ body {
     font-size: 22px;
 }
 
+#v-title {
+    background-color: rgb(109, 216, 248);
+    border-radius: 15px;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 #intro {
     background-color: rgb(78, 235, 235);
     border: 3px solid black;
