@@ -154,10 +154,11 @@
                 <p id="center">HTML</p>
                 <pre id="code">
                         <code>
-                &lt;div id="app" v-cloak&gt;
-                    &lt;p&gt;{{ title }}&lt;/p&gt;
-                    &lt;p&gt;{{ message }}&lt;/p&gt;
-                &lt;/div&gt;
+    &lt;div id="app-3" v-cloak&gt;
+        &lt;p&gt;{{ title }}&lt;/p&gt;
+        &lt;br&gt;
+        &lt;span v-if="seen"&gt;Now you see me&lt;/span&gt;
+    &lt;/div&gt;
                         </code>
                     </pre>
             </td>
@@ -165,13 +166,14 @@
                 <p id="center">JavaScript</p>
                 <pre id="code">
                         <code>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                title: "Declarative Rendering: ",
-                message: 'Hello Vue!'
-            }
-        })
+    var app4 = new Vue({
+        el: '#app-3',
+        data: {
+            title: "Below text uses v-if to
+            show text based on a boolean.",
+            seen: true
+        }
+    })
                         </code>
                     </pre>
             </td>
@@ -187,29 +189,60 @@
     <table id="table">
         <tr>
             <td id="box">
-                <p id="center">HTML</p>
+                <p id="center-2">HTML</p>
                 <pre id="code">
                         <code>
-                &lt;div id="app" v-cloak&gt;
-                    &lt;p&gt;{{ title }}&lt;/p&gt;
-                    &lt;p&gt;{{ message }}&lt;/p&gt;
-                &lt;/div&gt;
+            &lt;div id="app-4" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;ol&gt;
+                    &lt;li v-for="todo in todos"&gt;
+                        {{ todo.text }}
+                    &lt;/li&gt;
+                &lt;/ol&gt;
+
+                &lt;button v-on:click="reverseText"&gt;Reverse Text&lt;/button&gt;
+                &lt;button v-on:click="addItem"&gt;Add New Item&lt;/button&gt;
+                &lt;button v-on:click="refresh"&gt;Refresh&lt;/button&gt;
+            &lt;/div&gt;
                         </code>
                     </pre>
             </td>
+        </tr>
+    </table>
+
+    <table id="table">
+        <tr>
             <td id="box">
-                <p id="center">JavaScript</p>
+                <p id="center-2">JavaScript</p>
                 <pre id="code">
-                        <code>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                title: "Declarative Rendering: ",
-                message: 'Hello Vue!'
+                            <code>
+    var app5 = new Vue({
+        el: '#app-4',
+        data: {
+            title: "Below text uses v-for to list string objects from an array.",
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue' },
+                { text: 'Build something awesome' }
+            ]
+        },
+        methods: {
+
+            reverseText: function () {
+                this.todos[0].text = this.todos[0].text.split('').reverse().join('')
+            },
+
+            addItem: function () {
+                app5.todos.push({ text: 'New item' })
+            },
+
+            refresh: function () {
+                window.location.reload();
             }
-        })
-                        </code>
-                    </pre>
+        }
+    })
+                            </code>
+                        </pre>
             </td>
         </tr>
     </table>

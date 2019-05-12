@@ -64,6 +64,11 @@ body {
     width: 400px;
 }
 
+#center-2 {
+    text-align: center;
+    width: 675px;
+}
+
 #box {
     background-color: rgb(245, 245, 245);
     border: 1px solid black;
