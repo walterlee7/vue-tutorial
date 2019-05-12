@@ -108,10 +108,14 @@
                 <p id="center">HTML</p>
                 <pre id="code">
                         <code>
-                &lt;div id="app" v-cloak&gt;
-                    &lt;p&gt;{{ title }}&lt;/p&gt;
-                    &lt;p&gt;{{ message }}&lt;/p&gt;
-                &lt;/div&gt;
+ &lt;div id="app-2" v-cloak&gt;
+     &lt;p&gt;{{ title }}&lt;/p&gt;
+     &lt;br&gt;
+     &lt;span v-bind:title="message"&gt;
+        Hover your mouse over me for a few seconds
+        to see my dynamically bound title!
+     &lt;/span&gt;
+ &lt;/div&gt;
                         </code>
                     </pre>
             </td>
@@ -119,13 +123,16 @@
                 <p id="center">JavaScript</p>
                 <pre id="code">
                         <code>
-        var app = new Vue({
-            el: '#app',
-            data: {
-                title: "Declarative Rendering: ",
-                message: 'Hello Vue!'
-            }
-        })
+    var app3 = new Vue({
+        el: '#app-2',
+        data: {
+            title: "Below text uses the v-bind
+            directive, which applies reactive
+            behavior to the rendered DOM.",
+            message: 'You loaded this page on ' +
+            new Date().toLocaleString()
+        }
+    })
                         </code>
                     </pre>
             </td>
