@@ -2,8 +2,8 @@
     "homepage": "https://walterlee7.github.io/vue-tutorial/",
     "name": "vue-tutorial",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "This is a Vue.js directive tutorial.",
+    "main": "vue.js",
     "scripts": {
         "deploy": "gh-pages -d build"
     },
