@@ -1,0 +1,188 @@
+[v-cloak] {
+    display: none;
+}
+
+body {
+    background-color: rgb(147, 147, 241);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    min-width: 811px;
+}
+
+#title {
+    background-color: rgb(212, 212, 212);
+    border-radius: 15px;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#v-title {
+    background-color: rgb(109, 216, 248);
+    border-radius: 15px;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#intro {
+    background-color: rgb(78, 235, 235);
+    border: 3px solid black;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    margin: 1em;
+    padding: 0.5em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-size: 14px;
+}
+
+#intro-code {
+    margin: 0;
+    padding: 0;
+}
+
+#code {
+    margin: 0;
+    width: 0;
+}
+
+#table {
+    background-color: rgb(219, 212, 212);
+    font-family: monospace, monospace;
+    margin: 1em;
+    border: 3px solid black;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#center {
+    text-align: center;
+    width: 400px;
+}
+
+#center-2 {
+    text-align: center;
+    width: 675px;
+}
+
+#box {
+    background-color: rgb(245, 245, 245);
+    border: 1px solid black;
+    padding: 0;
+}
+
+#app {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-1 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-2 {
+    background-color: rgb(134, 252, 134);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-3 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-4 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-5 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#app-6 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    word-wrap: break-word;
+}
+
+#app-7 {
+    background-color: rgb(108, 243, 119);
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Walter Lee">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/walt-favicon.png">
+    <title>Vue.js Tutorial</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="title" v-cloak>
+        <p>{{ title }}</p>
+    </div>
+
+    <div id="intro">
+        <p>To use Vue.js directives, add this CDN inside the body element of your index.html file.</p>
+        <pre id="intro-code">
+            <code>
+ development version of Vue.js:
+ &lt;script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"&gt;&lt;/script&gt;
+
+ production version of Vue.js:
+ &lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;&lt;/script&gt;
+            </code>
+        </pre>
+        <p style="margin-top: 0; margin-bottom: 0.5em;">For more info, visit the Vue.js site:
+            <a href="https://vuejs.org/v2/guide/installation.html" target="_blank"
+                rel="noopener noreferrer">https://vuejs.org/v2/guide/installation.html</a></p>
+    </div>
+
+    <hr>
+
+    <p id="v-title">Declarative Rendering</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                    <code>
+            &lt;div id="app" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;p&gt;{{ message }}&lt;/p&gt;
+            &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                    <code>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            title: "Declarative Rendering: ",
+            message: 'Hello Vue!'
+        }
+    })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app" v-cloak>
+        <p>{{ title }}</p>
+        <p>{{ message }}</p>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-cloak</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">CSS</p>
+                <pre id="code">
+                        <code>
+                [v-cloak] {
+                    display: none;
+                }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-1">
+        <p v-cloak>{{ title }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <p>{{ message }} {{ message }} {{ message }} {{ message }} {{ message }}</p>
+        <button v-on:click="refresh">Refresh</button>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-bind</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                    <code>
+ &lt;div id="app-2" v-cloak&gt;
+     &lt;p&gt;{{ title }}&lt;/p&gt;
+     &lt;br&gt;
+     &lt;span v-bind:title="message"&gt;
+        Hover your mouse over me for a few seconds
+        to see my dynamically bound title!
+     &lt;/span&gt;
+ &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                    <code>
+    var app3 = new Vue({
+        el: '#app-2',
+        data: {
+            title: "Below text uses the v-bind
+            directive, which applies reactive
+            behavior to the rendered DOM.",
+            message: 'You loaded this page on ' +
+            new Date().toLocaleString()
+        }
+    })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-2" v-cloak>
+        <p>{{ title }}</p>
+        <br>
+        <span v-bind:title="message">
+            Hover your mouse over me for a few seconds
+            to see my dynamically bound title!
+        </span>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-if</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center">HTML</p>
+                <pre id="code">
+                    <code>
+    &lt;div id="app-3" v-cloak&gt;
+        &lt;p&gt;{{ title }}&lt;/p&gt;
+        &lt;br&gt;
+        &lt;span v-if="seen"&gt;Now you see me&lt;/span&gt;
+    &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+            <td id="box">
+                <p id="center">JavaScript</p>
+                <pre id="code">
+                    <code>
+    var app4 = new Vue({
+        el: '#app-3',
+        data: {
+            title: "Below text uses v-if to
+            show text based on a boolean.",
+            seen: true
+        }
+    })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-3" v-cloak>
+        <p>{{ title }}</p>
+        <br>
+        <span v-if="seen">Now you see me</span>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-for</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">HTML</p>
+                <pre id="code">
+                    <code>
+            &lt;div id="app-4" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;ol&gt;
+                    &lt;li v-for="todo in todos"&gt;
+                        {{ todo.text }}
+                    &lt;/li&gt;
+                &lt;/ol&gt;
+
+                &lt;button v-on:click="reverseText"&gt;Reverse Text&lt;/button&gt;
+                &lt;button v-on:click="addItem"&gt;Add New Item&lt;/button&gt;
+                &lt;button v-on:click="refresh"&gt;Refresh&lt;/button&gt;
+            &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">JavaScript</p>
+                <pre id="code">
+                            <code>
+    var app5 = new Vue({
+        el: '#app-4',
+        data: {
+            title: "Below text uses v-for to list string objects from an array.",
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue' },
+                { text: 'Build something awesome' }
+            ]
+        },
+        methods: {
+
+            reverseText: function () {
+                this.todos[0].text = this.todos[0].text.split('').reverse().join('')
+            },
+
+            addItem: function () {
+                app5.todos.push({ text: 'New item' })
+            },
+
+            refresh: function () {
+                window.location.reload();
+            }
+        }
+    })
+                            </code>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-4" v-cloak>
+        <p>{{ title }}</p>
+        <ol>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ol>
+
+        <button v-on:click="reverseText">Reverse Text</button>
+        <button v-on:click="addItem">Add New Item</button>
+        <button v-on:click="refresh">Refresh</button>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-on:click</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">HTML</p>
+                <pre id="code">
+                            <code>
+            &lt;div id="app-5" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;p&gt;{{ message }}&lt;/p&gt;
+                &lt;button v-on:click="reverseMessage"&gt;Reverse Message&lt;/button&gt;
+            &lt;/div&gt;
+                            </code>
+                        </pre>
+            </td>
+        </tr>
+    </table>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">JavaScript</p>
+                <pre id="code">
+                    <code>
+        var app6 = new Vue({
+            el: '#app-5',
+            data: {
+                title: "Below examples uses v-on:click for event listening.",
+                message: 'Hello Vue.js!'
+            },
+            methods: {
+                reverseMessage: function () {
+                    this.message = this.message.split('').reverse().join('')
+                }
+            }
+        })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-5" v-cloak>
+        <p>{{ title }}</p>
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-model</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">HTML</p>
+                <pre id="code">
+                    <code>
+                            &lt;div id="app-6" v-cloak&gt;
+                                &lt;p&gt;{{ title }}&lt;/p&gt;
+                                &lt;p&gt;{{ message }}&lt;/p&gt;
+                                &lt;input v-model="message"&gt;
+                            &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">JavaScript</p>
+                <pre id="code">
+                    <code>
+            var app7 = new Vue({
+                el: '#app-6',
+                data: {
+                    title: "Below example uses v-model to handle input.",
+                    message: 'Hello Vue!'
+                }
+            })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-6" v-cloak>
+        <p>{{ title }}</p>
+        <p>{{ message }}</p>
+        <input v-model="message">
+    </div>
+
+    <hr>
+
+    <p id="v-title">v-bind:key</p>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">HTML</p>
+                <pre id="code">
+                    <code>
+            &lt;div id="app-7" v-cloak&gt;
+                &lt;p&gt;{{ title }}&lt;/p&gt;
+                &lt;ol&gt;
+                    &lt;todo-item v-for="item in groceryList" v-bind:todo="item"
+                    v-bind:key="item.id"&gt;&lt;/todo-item&gt;
+                &lt;/ol&gt;
+            &lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <table id="table">
+        <tr>
+            <td id="box">
+                <p id="center-2">JavaScript</p>
+                <pre id="code">
+                    <code>
+        Vue.component('todo-item', {
+            props: ['todo'],
+            template: '&lt;li&gt;{{ todo.text }}&lt;/li&gt;'
+        })
+
+        var app8 = new Vue({
+            el: '#app-7',
+            data: {
+                title: "This uses v-bind to add key numbers to the list items.",
+                groceryList: [
+                    { id: 0, text: 'Vegetables' },
+                    { id: 1, text: 'Cheese' },
+                    { id: 2, text: 'Whatever else humans are supposed to eat' }
+                ]
+            }
+        })
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <div id="app-7" v-cloak>
+        <p>{{ title }}</p>
+        <ol>
+            <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id"></todo-item>
+        </ol>
+    </div>
+
+    <!-- development version of Vue.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+
+    <!-- production version of Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <script type="text/javascript" src="vue.js"></script>
+</body>
+
+</html>
