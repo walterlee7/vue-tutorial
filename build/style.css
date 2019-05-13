@@ -91,7 +91,7 @@ body {
 }
 
 #app {
-    background-color: orange;
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -103,7 +103,7 @@ body {
 }
 
 #app-1 {
-    background-color: orange;
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -127,7 +127,7 @@ body {
 }
 
 #app-3 {
-    background-color: rgb(134, 209, 252);
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -139,7 +139,7 @@ body {
 }
 
 #app-4 {
-    background-color: rgb(252, 134, 246);
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -151,7 +151,7 @@ body {
 }
 
 #app-5 {
-    background-color: rgb(252, 134, 144);
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -163,7 +163,7 @@ body {
 }
 
 #app-6 {
-    background-color: rgb(230, 76, 71);
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
@@ -176,7 +176,7 @@ body {
 }
 
 #app-7 {
-    background-color: rgb(214, 230, 71);
+    background-color: rgb(108, 243, 119);
     text-align: center;
     margin: 1em;
     padding: 1em;
